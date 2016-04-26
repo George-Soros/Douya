@@ -23,10 +23,13 @@ interface ApiCredential {
     }
 
     interface Frodo {
-        String KEY = HackyApiCredentialHelper.loadStringFromFile(new File(
-                Environment.getExternalStorageDirectory(), "Douya/API_KEY"));
-        String SECRET = HackyApiCredentialHelper.loadStringFromFile(new File(
-                Environment.getExternalStorageDirectory(), "Douya/API_SECRET"));
+//        String KEY = HackyApiCredentialHelper.loadStringFromFile(new File(
+//                Environment.getExternalStorageDirectory(), "Douya/API_KEY"));
+//        String SECRET = HackyApiCredentialHelper.loadStringFromFile(new File(
+//                Environment.getExternalStorageDirectory(), "Douya/API_SECRET"));
+
+        String KEY = "0dad551ec0f84ed02907ff5c42e8ec70";
+        String SECRET = "9e8bb54dc3288cdf";
     }
 }
 

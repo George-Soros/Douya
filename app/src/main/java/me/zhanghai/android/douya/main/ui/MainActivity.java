@@ -5,14 +5,11 @@
 
 package me.zhanghai.android.douya.main.ui;
 
+import android.os.Bundle;
 import android.os.StrictMode;
 import android.support.design.widget.NavigationView;
-import android.support.design.widget.TabLayout;
-import android.support.v4.app.Fragment;
-import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -27,13 +24,10 @@ import butterknife.ButterKnife;
 import me.zhanghai.android.douya.BuildConfig;
 import me.zhanghai.android.douya.R;
 import me.zhanghai.android.douya.account.util.AccountUtils;
-import me.zhanghai.android.douya.broadcast.ui.BroadcastListFragment;
 import me.zhanghai.android.douya.home.HomeFragment;
 import me.zhanghai.android.douya.notification.ui.NotificationListFragment;
 import me.zhanghai.android.douya.settings.ui.SettingsActivity;
 import me.zhanghai.android.douya.ui.ActionItemBadge;
-import me.zhanghai.android.douya.ui.AppBarWrapperLayout;
-import me.zhanghai.android.douya.ui.TabFragmentPagerAdapter;
 import me.zhanghai.android.douya.util.FragmentUtils;
 import me.zhanghai.android.douya.util.TransitionUtils;
 
@@ -84,6 +78,7 @@ public class MainActivity extends AppCompatActivity
 
         setContentView(R.layout.main_activity);
         TransitionUtils.setupTransitionAfterSetContentView(this);
+        //view注入activity绑定
         ButterKnife.bind(this);
 
         mNavigationView.setNavigationItemSelectedListener(

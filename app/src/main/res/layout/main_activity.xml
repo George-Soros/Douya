@@ -14,6 +14,7 @@
     android:layout_width="match_parent"
     tools:context=".main.ui.MainActivity">
 
+    <!-- 中间内容栏目 -->
     <me.zhanghai.android.douya.ui.InsetBackgroundFrameLayout
         android:id="@+id/container"
         android:layout_width="match_parent"
@@ -21,6 +22,7 @@
         android:fitsSystemWindows="true"
         app:insetBackground="@color/douya_primary_dark_without_system_window_scrim" />
 
+    <!--左滑列表, 导航栏-->
     <me.zhanghai.android.douya.ui.FullscreenNavigationView
         android:id="@+id/navigation"
         android:layout_width="wrap_content"
@@ -30,6 +32,7 @@
         app:headerLayout="@layout/navigation_header"
         app:menu="@menu/navigation" />
 
+    <!--右滑列表, 通知栏-->
     <me.zhanghai.android.douya.ui.MaxDimensionDispatchInsetsFrameLayout
         android:id="@+id/notification_list_drawer"
         android:layout_width="wrap_content"
